@@ -8,13 +8,17 @@ Antes de começar, verifique se você possui o Docker instalado em seu sistema. 
 ## Passo a Passo
 ### Siga as instruções abaixo para configurar o ReadTheDocs usando o Docker:
 
-- ### Clonar o repositório do Github **git clone [<u>https://github.com/EduardoVasconceloss/docker-readthedocs.git</u>](https://github.com/EduardoVasconceloss/docker-readthedocs.git)**
+- ### Clonar o repositório do Github 
+**``git clone https://github.com/EduardoVasconceloss/docker-readthedocs.git``**
 
-- ### Crie um diretório na partição var e mude o nome dele **mkdir rtd && chown -R 1005:205 /var/local/rtd**
+- ### Crie um diretório na partição var e mude o nome dele 
+**``mkdir rtd && chown -R 1005:205 /var/local/rtd``**
 
-- ### Entre no diretório que você clonou do github e rode esse comando **docker run -it -v /var/local/rtd:/data -p 8001:8000 -e RTD_PRODUCTION_DOMAIN="\<IP-da-máquina\>:8001" -d seblon/readthedocs-docker** 
+- ### Entre no diretório que você clonou do github e rode esse comando 
+**``docker run -it -v /var/local/rtd:/data -p 8001:8000 -e RTD_PRODUCTION_DOMAIN="\<IP-da-máquina\>:8001" -d seblon/readthedocs-docker``**
 
-- ### Agora acesse o ReadTheDocs via navegador **http://\<IP-da-máquina\>:8001**
+- ### Agora acesse o ReadTheDocs via navegador 
+**``http://\<IP-da-máquina\>:8001``**
 ##
 ## Dicas
 - Personalize e adicione sua documentação ao projeto.
